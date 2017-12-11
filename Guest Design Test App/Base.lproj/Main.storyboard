@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EUL-xS-LlZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Qmc-x6-y7o">
+            <objects>
+                <viewController id="EUL-xS-LlZ" customClass="ViewController" customModule="Guest_Design_Test_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qpe-3q-Onh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wiY-uc-8XJ">
+                                <rect key="frame" x="-4" y="0.0" width="383" height="667"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="RwW-ug-JBI">
+                                        <rect key="frame" x="8" y="155" width="367" height="512"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="512" id="cOE-hQ-Ece"/>
+                                        </constraints>
+                                    </tableView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="restaurant-bg.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cXo-ww-kvk">
+                                        <rect key="frame" x="0.0" y="0.0" width="383" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="NNF-LS-5qn"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="RwW-ug-JBI" secondAttribute="bottom" id="B2P-L8-xGc"/>
+                                    <constraint firstItem="RwW-ug-JBI" firstAttribute="leading" secondItem="wiY-uc-8XJ" secondAttribute="leadingMargin" id="M3h-oG-JCM"/>
+                                    <constraint firstItem="cXo-ww-kvk" firstAttribute="leading" secondItem="wiY-uc-8XJ" secondAttribute="leading" id="VaU-ql-cXO"/>
+                                    <constraint firstItem="cXo-ww-kvk" firstAttribute="centerX" secondItem="RwW-ug-JBI" secondAttribute="centerX" id="cVX-Yz-EGG"/>
+                                    <constraint firstItem="RwW-ug-JBI" firstAttribute="top" secondItem="wiY-uc-8XJ" secondAttribute="top" constant="155" id="fiE-eG-0ew"/>
+                                    <constraint firstAttribute="trailing" secondItem="cXo-ww-kvk" secondAttribute="trailing" id="izC-Pg-n4v"/>
+                                    <constraint firstItem="cXo-ww-kvk" firstAttribute="centerX" secondItem="wiY-uc-8XJ" secondAttribute="centerX" id="lfF-eU-1nc"/>
+                                    <constraint firstItem="cXo-ww-kvk" firstAttribute="top" secondItem="wiY-uc-8XJ" secondAttribute="top" id="vHu-7Z-gyq"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="wiY-uc-8XJ" firstAttribute="top" secondItem="qpe-3q-Onh" secondAttribute="top" id="9az-jV-Xc4"/>
+                            <constraint firstItem="wiY-uc-8XJ" firstAttribute="centerX" secondItem="qpe-3q-Onh" secondAttribute="centerX" id="CQO-gu-FeZ"/>
+                            <constraint firstItem="wiY-uc-8XJ" firstAttribute="bottom" secondItem="Qng-Mj-fLw" secondAttribute="bottom" id="hoE-zJ-CEs"/>
+                            <constraint firstItem="wiY-uc-8XJ" firstAttribute="leading" secondItem="qpe-3q-Onh" secondAttribute="leadingMargin" constant="-20" id="pno-ZB-nBb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qng-Mj-fLw"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sc3-I7-fxG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="8.8000000000000007" y="102.09895052473765"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="restaurant-bg.jpg" width="1080" height="420"/>
+    </resources>
+</document>
